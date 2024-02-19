@@ -16,7 +16,7 @@ COMPLETED_BTN = InlineKeyboardMarkup([
 CANCEL_BTN = InlineKeyboardMarkup([[InlineKeyboardButton('• ᴄᴀɴᴄᴇʟ', 'terminate_frwd')]]) 
   
 @Client.on_message(filters.command("unequify") & filters.private) 
- async def unequify(client, message): 
+async def unequify(client, message): 
      user_id = message.from_user.id 
      temp.CANCEL[user_id] = False 
   
