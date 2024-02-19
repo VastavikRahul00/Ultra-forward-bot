@@ -8,14 +8,14 @@ from pyrogram import Client, filters
 from pyropatch.utils import unpack_new_file_id
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
   
- CLIENT = CLIENT()
- COMPLETED_BTN = InlineKeyboardMarkup([ 
+CLIENT = CLIENT()
+COMPLETED_BTN = InlineKeyboardMarkup([ 
      [InlineKeyboardButton('💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟', url='https://t.me/venombotsupport')],
      [InlineKeyboardButton('💠 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 💠', url='https://t.me/venombotupdates')] 
  ])
- CANCEL_BTN = InlineKeyboardMarkup([[InlineKeyboardButton('• ᴄᴀɴᴄᴇʟ', 'terminate_frwd')]]) 
+CANCEL_BTN = InlineKeyboardMarkup([[InlineKeyboardButton('• ᴄᴀɴᴄᴇʟ', 'terminate_frwd')]]) 
   
- @Client.on_message(filters.command("unequify") & filters.private) 
+@Client.on_message(filters.command("unequify") & filters.private) 
  async def unequify(client, message): 
      user_id = message.from_user.id 
      temp.CANCEL[user_id] = False 
