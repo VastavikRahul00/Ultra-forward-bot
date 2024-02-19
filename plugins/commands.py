@@ -8,8 +8,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument
 
 main_buttons = [[
-        InlineKeyboardButton('📜 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Galaxy_Support123'),
-        InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Galaxy_Bots1')
+        InlineKeyboardButton('📜 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Jisshu_support'),
+        InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/JISSHU_BOTS')
         ],[
         InlineKeyboardButton('❗️ʜᴇʟᴘ❗', callback_data='help') 
         ],[
@@ -43,7 +43,7 @@ async def restart(client, message):
     
 #==================Callback Functions==================#
 
-@Client.on_callback_query(filters.regex('help'))
+@Client.on_callback_query(filters.regex(r'help'))
 async def helpcb(bot, query):
     buttons = [[
             InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about'),
