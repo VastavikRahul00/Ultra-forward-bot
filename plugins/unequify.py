@@ -8,7 +8,7 @@ from pyrogram import Client, filters
 from pyropatch.utils import unpack_new_file_id
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
   
-CLIENT = CLIENT()
+ CLIENT = CLIENT()
  COMPLETED_BTN = InlineKeyboardMarkup([ 
      [InlineKeyboardButton('💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟', url='https://t.me/venombotsupport')],
      [InlineKeyboardButton('💠 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 💠', url='https://t.me/venombotupdates')] 
