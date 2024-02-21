@@ -1,4 +1,4 @@
-git+https://github.com/rahulps1000/pyropatch
+git+https://github.com/ELINA-BOTS/pyropatch2
 motor
 TgCrypto
 Dnspython
