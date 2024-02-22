@@ -1,5 +1,5 @@
 git+https://github.com/Lord-JackSparrow/pyropatch
-motor
+motor==2.5.1
 TgCrypto
 Dnspython
 telebot
