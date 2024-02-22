@@ -1,5 +1,5 @@
 git+https://github.com/Jisshubot/pyrogram
-motor==2.5.1
+motor
 TgCrypto
 Dnspython
 telebot
